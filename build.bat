@@ -1,0 +1,1 @@
+zip -r IASDApps build/*
