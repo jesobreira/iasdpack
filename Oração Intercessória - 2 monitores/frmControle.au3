@@ -1,0 +1,20 @@
+#Region ### START Koda GUI section ### Form=C:\Users\IASD\apps\controle.kxf
+$frmControle = GUICreate("Oração Intercessória - Controle", 578, 65, 0, 0)
+GUISetOnEvent($GUI_EVENT_CLOSE, "frmControleClose")
+$Group1 = GUICtrlCreateGroup(" Sorteio ", 8, 0, 217, 57)
+$iSorteioNumero = GUICtrlCreateInput("", 16, 24, 113, 21, BitOR($GUI_SS_DEFAULT_INPUT,$ES_NUMBER))
+$Button1 = GUICtrlCreateButton("Sortear", 136, 24, 81, 25)
+GUICtrlSetOnEvent(-1, "sortear")
+GUICtrlCreateGroup("", -99, -99, 1, 1)
+$Group2 = GUICtrlCreateGroup(" Consulta ", 232, 0, 217, 57)
+$iConsultaNumero = GUICtrlCreateInput("", 240, 24, 105, 21, BitOR($GUI_SS_DEFAULT_INPUT,$ES_NUMBER))
+$Button3 = GUICtrlCreateButton("Consultar", 352, 24, 89, 25)
+GUICtrlSetOnEvent(-1, "consultar")
+GUICtrlCreateGroup("", -99, -99, 1, 1)
+$Group4 = GUICtrlCreateGroup("", 456, 0, 113, 57)
+$Button4 = GUICtrlCreateButton("Editar famílias", 464, 16, 97, 33)
+GUICtrlSetOnEvent(-1, "editarfamilias")
+GUICtrlCreateGroup("", -99, -99, 1, 1)
+GUISetState(@SW_SHOW)
+#EndRegion ### END Koda GUI section ###
+

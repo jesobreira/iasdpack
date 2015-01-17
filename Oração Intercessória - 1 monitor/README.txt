@@ -1,0 +1,1 @@
+Neste aplicativo, o código fonte está na pasta "src". Quando não compilado (rodando apenas em teste), ele procura o arquivo de banco de dados no caminho relativo "..\resources\familias.ini". Quando compilado, o caminho relativo é "resources\familia.ini". Neste caso, o arquivo compilado precisa estar na mesma pasta deste arquivo para funcionar.
